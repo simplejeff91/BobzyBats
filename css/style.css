@@ -1799,22 +1799,37 @@ section {
 }
 
 /* Fix mobile nav visibility */
+/* Simplified Mobile Header and Nav */
 @media (max-width: 991.98px) {
   #header {
-    position: relative !important;
+    position: relative !important; /* stops fixed overlap on small screens */
     width: 100% !important;
+    padding: 15px 0;
+    background: #2f5839; /* keep header visible */
   }
 
+  #nav-menu-container {
+    display: none; /* hide desktop menu */
+  }
+
+  #mobile-nav {
+    left: -260px; /* off-canvas by default */
+    transition: left 0.4s ease;
+  }
+
+  body.mobile-nav-active #mobile-nav {
+    left: 0; /* show nav when active */
+  }
+
+  #mobile-nav-toggle {
+    display: inline-block;
+    color: #fff;
+    z-index: 1000;
+  }
+
+  /* Ensure main content is not hidden behind header */
   #main {
-    margin-left: 0 !important;
-  }
-
-  .navbar-collapse {
-    display: none;  /* hide by default */
-  }
-
-  .navbar-collapse.collapse.show {
-    display: block !important; /* show when toggled */
+    margin-top: 0;
   }
 }
 
