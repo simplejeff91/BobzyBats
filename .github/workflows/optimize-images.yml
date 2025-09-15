@@ -1,0 +1,16 @@
+name: Optimize Images Automatically
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  optimize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Compress Images
+        uses: calibreapp/image-actions@v1
+        with:
+          compress: true
