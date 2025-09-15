@@ -20,3 +20,13 @@
         margin-top: 0;
     }
 }
+
+/* Force hide mobile menu */
+#mobile-nav-toggle,
+#mobile-nav,
+body.mobile-nav-active #mobile-nav {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
