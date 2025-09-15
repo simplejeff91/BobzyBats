@@ -1798,4 +1798,23 @@ section {
   }
 }
 
+/* Fix mobile nav visibility */
+@media (max-width: 991.98px) {
+  #header {
+    position: relative !important;
+    width: 100% !important;
+  }
+
+  #main {
+    margin-left: 0 !important;
+  }
+
+  .navbar-collapse {
+    display: none;  /* hide by default */
+  }
+
+  .navbar-collapse.collapse.show {
+    display: block !important; /* show when toggled */
+  }
+}
 
