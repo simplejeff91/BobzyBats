@@ -1770,3 +1770,13 @@ input.form-control, textarea.form-control, select.form-control {
 section {
     padding: 60px 0;
 }
+
+.navbar {
+  background: #fff; /* or transparent if you want */
+  padding: 10px 0;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  padding: 8px 15px;
+}
