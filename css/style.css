@@ -1780,3 +1780,8 @@ section {
   font-weight: 500;
   padding: 8px 15px;
 }
+
+
+#mobile-nav.show {
+    display: block !important;
+}
