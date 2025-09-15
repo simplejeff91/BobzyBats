@@ -1785,3 +1785,17 @@ section {
 #mobile-nav.show {
     display: block !important;
 }
+
+/* Fix mobile layout for screens smaller than 992px (Bootstrap lg breakpoint) */
+@media (max-width: 991.98px) {
+  #header {
+    position: relative; /* stop fixing the sidebar */
+    width: 100%;
+  }
+
+  #main {
+    margin-left: 0; /* reset content position */
+  }
+}
+
+
