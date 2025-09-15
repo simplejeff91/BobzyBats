@@ -38,10 +38,9 @@
 ============================-->
 <header id="header">
   <div class="container d-flex align-items-center justify-content-between">
-
     <!-- Logo -->
     <a href="#intro" class="scrollto">
-      <img src="img/logo.png" alt="TalalBats Logo" style="width:120px; height:auto;">
+      <img src="img/logo.png" alt="BobzyBats Logo" title="BobzyBats" style="width: 120px; height: auto;">
     </a>
 
     <!-- Desktop Navigation -->
@@ -55,18 +54,17 @@
       </ul>
     </nav>
 
-    <!-- Mobile Toggle Button -->
+    <!-- Mobile Menu Button -->
     <button class="d-lg-none" type="button" data-toggle="collapse" data-target="#mobile-nav"
         aria-controls="mobile-nav" aria-expanded="false" aria-label="Toggle navigation"
         style="background:none; border:none;">
-      <i class="fa fa-bars" style="color:white; font-size:28px;"></i>
+      <i class="fa fa-bars" style="color:white; font-size: 28px;"></i>
     </button>
-
   </div>
 
-  <!-- Mobile Navigation -->
+  <!-- Collapsible Mobile Menu -->
   <div class="collapse" id="mobile-nav">
-    <ul class="nav flex-column text-center" style="background: rgba(0,0,0,0.9); margin:0;">
+    <ul class="nav flex-column text-center" style="background: rgba(0,0,0,0.9);">
       <li><a class="nav-link text-white" href="#intro">Home</a></li>
       <li><a class="nav-link text-white" href="#about">About</a></li>
       <li><a class="nav-link text-white" href="#services">Services</a></li>
@@ -75,7 +73,6 @@
     </ul>
   </div>
 </header>
-
 
 
   <!--==========================
@@ -146,117 +143,88 @@
         </div>
       </div>
     </section>
+<!--==========================
+  Tutoring Packages Section
+============================-->
+<!--==========================
+  Cricket Tutoring Packages
+============================-->
+<section id="packages">
+  <div class="container">
+    <div class="section-header">
+      <h2>Cricket Tutoring Genius</h2>
+      <p>Tailored cricket tutoring packages for beginners, intermediates, and advanced players.</p>
+    </div>
 
-    <!--==========================
-      Packages Section
-    ============================-->
-    <section id="packages">
-      <div class="container">
-        <div class="section-header">
-          <h2>Cricket Packages</h2>
-          <p>We offer packages to fit every cricket fan's needs, from beginners to professionals.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="card mb-5 mb-lg-0">
-              <div class="card-body">
-                <h5 class="card-title text-muted text-uppercase text-center">Bronze</h5>
-                <h6 class="card-price text-center">$150</h6>
-                <hr>
-                <ul class="fa-ul">
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Basic Cricket Coaching</li>
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Access to Practice Nets</li>
-                  <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Participation in Tournaments</li>
-                  <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Merchandise Discounts</li>
-                </ul>
-                <hr>
-                <div class="text-center">
-                  <button type="button" class="btn" data-toggle="modal" data-target="#book-ticket-modal" data-ticket-type="bronze">Book Now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="card mb-5 mb-lg-0">
-              <div class="card-body">
-                <h5 class="card-title text-muted text-uppercase text-center">Silver</h5>
-                <h6 class="card-price text-center">$250</h6>
-                <hr>
-                <ul class="fa-ul">
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Includes Bronze Package</li>
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Intermediate Cricket Coaching</li>
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Participation in Tournaments</li>
-                  <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Advanced Merchandise Discounts</li>
-                </ul>
-                <hr>
-                <div class="text-center">
-                  <button type="button" class="btn" data-toggle="modal" data-target="#book-ticket-modal" data-ticket-type="silver">Book Now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title text-muted text-uppercase text-center">Gold</h5>
-                <h6 class="card-price text-center">$350</h6>
-                <hr>
-                <ul class="fa-ul">
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Includes Silver Package</li>
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Advanced Cricket Coaching</li>
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>VIP Tournament Access</li>
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Full Merchandise Package</li>
-                </ul>
-                <hr>
-                <div class="text-center">
-                  <button type="button" class="btn" data-toggle="modal" data-target="#book-ticket-modal" data-ticket-type="gold">Book Now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Modal Order Form -->
-      <div id="book-ticket-modal" class="modal fade">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title">Book Your Cricket Package</h4>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <form method="POST" action="#">
-                <div class="form-group">
-                  <input type="text" class="form-control" name="your-name" placeholder="Your Name">
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" name="your-email" placeholder="Your Email">
-                </div>
-                <div class="form-group">
-                  <select id="ticket-type" name="ticket-type" class="form-control">
-                    <option value="">-- Select Your Package --</option>
-                    <option value="bronze">Bronze Package</option>
-                    <option value="silver">Silver Package</option>
-                    <option value="gold">Gold Package</option>
-                  </select>
-                </div>
-                <div class="text-center">
-                  <button type="submit" class="btn">Book Now</button>
-                </div>
-              </form>
+    <div class="row">
+      <!-- Bronze -->
+      <div class="col-lg-4">
+        <div class="card mb-5 mb-lg-0">
+          <div class="card-body">
+            <h5 class="card-title text-muted text-uppercase text-center">Bronze</h5>
+            <h6 class="card-price text-center">PKR 3,999</h6>
+            <hr>
+            <ul class="fa-ul">
+              <li><span class="fa-li"><i class="fa fa-check"></i></span>Basic Cricket Skills Coaching</li>
+              <li><span class="fa-li"><i class="fa fa-check"></i></span>Practice Net Access</li>
+              <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>One-on-One Tutoring</li>
+              <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Match Strategy Guidance</li>
+            </ul>
+            <hr>
+            <div class="text-center">
+              <button type="button" class="btn" data-toggle="modal" data-target="#book-ticket-modal" data-ticket-type="bronze">Book Now</button>
             </div>
           </div>
         </div>
       </div>
 
-    </section>
+      <!-- Silver -->
+      <div class="col-lg-4">
+        <div class="card mb-5 mb-lg-0">
+          <div class="card-body">
+            <h5 class="card-title text-muted text-uppercase text-center">Silver</h5>
+            <h6 class="card-price text-center">PKR 7,999</h6>
+            <hr>
+            <ul class="fa-ul">
+              <li><span class="fa-li"><i class="fa fa-check"></i></span>Includes Bronze Package</li>
+              <li><span class="fa-li"><i class="fa fa-check"></i></span>Intermediate Cricket Tutoring</li>
+              <li><span class="fa-li"><i class="fa fa-check"></i></span>One-on-One Coaching Sessions</li>
+              <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Match Strategy Guidance</li>
+            </ul>
+            <hr>
+            <div class="text-center">
+              <button type="button" class="btn" data-toggle="modal" data-target="#book-ticket-modal" data-ticket-type="silver">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gold -->
+      <div class="col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-muted text-uppercase text-center">Gold</h5>
+            <h6 class="card-price text-center">PKR 11,999 </h6>
+            <hr>
+            <ul class="fa-ul">
+              <li><span class="fa-li"><i class="fa fa-check"></i></span>Includes Silver Package</li>
+              <li><span class="fa-li"><i class="fa fa-check"></i></span>Advanced Tutoring & Drills</li>
+              <li><span class="fa-li"><i class="fa fa-check"></i></span>Personalized Match Strategy</li>
+              <li><span class="fa-li"><i class="fa fa-check"></i></span>Full Access to Resources & Gear</li>
+            </ul>
+            <hr>
+            <div class="text-center">
+              <button type="button" class="btn" data-toggle="modal" data-target="#book-ticket-modal" data-ticket-type="gold">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Order Form stays the same -->
+</section>
+
 
     <!--==========================
       Contact Section
@@ -283,7 +251,7 @@
             <div class="contact-phone">
               <i class="ion-ios-telephone-outline"></i>
               <h3>Phone Number</h3>
-              <p><a href="tel:+199999999">+1 999 9999</a></p>
+              <p><a href="tel:+199999999">(248)434-55089</a></p>
             </div>
           </div>
 
@@ -291,7 +259,7 @@
             <div class="contact-email">
               <i class="ion-ios-email-outline"></i>
               <h3>Email</h3>
-              <p><a href="mailto:Bobzybats@gmail.com">Bobzybats@gmail.com</a></p>
+              <p><a href="mailto:bobzybats@gmail.com">bobzybats@gmail.com</a></p>
             </div>
           </div>
 
@@ -321,8 +289,8 @@
               A309 Cricket Lane <br>
               New York City <br>
               USA <br>
-              <strong>Phone:</strong> +1 999 99999<br>
-              <strong>Email:</strong> Bobzybats@gmail.com <br> 
+              <strong>Phone:</strong>(248) 434-5508<br>
+              <strong>Email:</strong>bobzybats@gmail.com <br> 
               
             </p>
           </div>
